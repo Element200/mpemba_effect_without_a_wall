@@ -1,0 +1,14 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\begin{document}
+\begin{tikzpicture}
+    \begin{loglogaxis}[axis lines=left, ylabel={\Large $\mathcal L_1$ distance}, xlabel={\Large $t$}, ytick={0.01, 0.1, 1.0}, yticklabels={0.01, 0.1, 1.0}, ymin=0.01, ymax=1.2]
+        \addplot[black] table[col sep=comma, x=t, y=1]{bent_a0.8.csv};
+        \addplot[blue] table[col sep=comma, x=t, y=3]{bent_a0.8.csv};
+        \addplot[red] table[col sep=comma, x=t, y=12]{bent_a0.8.csv};
+    \end{loglogaxis}
+\end{tikzpicture}
+\end{document}

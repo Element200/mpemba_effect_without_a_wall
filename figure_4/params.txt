@@ -1,0 +1,12 @@
+ASYMMETRIC DOUBLE-WELLED QUARTIC POTENTIAL WITH FINITE MAXIMUM SLOPES
+E_barrier : 2
+E_tilt : 0.6
+x_well : 0.5
+x_min : -6
+x_max : 6
+
+F_left : 40.0
+F_right : 12.0
+
+x_l : -0.841728074518357
+x_r : 0.659411728802835

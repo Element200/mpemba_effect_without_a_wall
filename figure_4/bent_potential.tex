@@ -1,0 +1,14 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\begin{document}
+\begin{tikzpicture}
+    \begin{axis}[axis lines=none]
+        \addplot[black, thick] table[col sep=comma, x=x, y=U]{bent_potential_maindomain.csv};
+        \addplot[red, thick] table[col sep=comma, x=x, y=U]{bent_potential_left.csv};
+        \addplot[red, thick] table[col sep=comma, x=x, y=U]{bent_potential_right.csv};
+    \end{axis}
+\end{tikzpicture}
+\end{document}
