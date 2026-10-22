@@ -1,0 +1,18 @@
+\addplot[domain=-1.3670004639531117:1.1718908949340199, samples=200, thick]{10*x^4 - 20*x^2 - 5*x/2 + 10};
+\addplot[domain=-2:-1.3670004639531117, red, thick]{-50*x - 57.3862942128098};
+\addplot[domain=1.1718908949340199:3, red, thick]{15.0*x - 19.1143506923016};
+\addplot[domain=-2.3:-2, red, thick]{-50*x - 57.3862942128098};
+\addplot[domain=3:3.3, red, thick]{15.0*x - 19.1143506923016};
+\draw[<->, thick]
+(axis cs:0,0) -- node[left, blue]{\small $E_b$}
+(axis cs:0,10);
+\draw[dashed]
+(axis cs:-1.1,-2.5) -- node{} 
+(axis cs:1.2,-2.5);
+\draw[dashed]
+(axis cs:-0.85,2.5) -- node{} 
+(axis cs:-1.1,2.5);
+\draw[<->, thick]
+(axis cs:-1,2.5) -- node[left, blue]{\small $\Delta E$}
+(axis cs:-1,-2.5);
+\node at (axis cs:0,9)[above] {\small $U_0(x)$};
