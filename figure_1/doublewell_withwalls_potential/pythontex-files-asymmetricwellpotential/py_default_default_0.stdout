@@ -1,0 +1,17 @@
+\addplot[domain=-1.3670004639531117:1.3935088745328692, samples=200]{10*x^4 - 20*x^2 - 5*x/2 + 10};
+\addplot[domain=-2:-1.3670004639531117, black]{-50*x - 57.3862942128098};
+\addplot[domain=1.3935088745328692:3, black]{50*x - 64.2880817687504};
+\addplot[domain=-2.5:-2, black, dashed]{-50*x - 57.3862942128098};
+\addplot[domain=3:3.5, black, dashed]{50*x - 64.2880817687504};
+\draw[->, thick, red] 
+(axis cs:-2,42.61370578719017) -- node[at end, right, red]{$\infty$} 
+(axis cs:-2,130);
+\draw[->, thick, red] 
+(axis cs:3,85.71191823124963) -- node[at end, left, red]{$\infty$} 
+(axis cs:3,130);
+\draw[<->, thick]
+(axis cs:-2,-6) -- node[below, at start]{\small $x_{\min}$}
+(axis cs:0,-6);
+\draw[<->, thick]
+(axis cs:0,-6) -- node[below, at end]{\small $x_{\max}$}
+(axis cs:3,-6);
